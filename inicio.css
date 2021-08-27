@@ -1,223 +1,220 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Spartan', sans-serif;
-    background-color: #ffffff ;
-    /* background-image: linear-gradient(0deg, #b5b5b5 0%, #ffffff 57%); */
+  font-family: "Spartan", sans-serif;
+  background-color: #ffffff;
 }
 
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: .5% 8%;
-    margin: 0 20px;
-    border-radius: 0 0 20px 20px;
-    background-color: #85FFBD;
-    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5% 8%;
+  margin: 0 20px;
+  border-radius: 0 0 20px 20px;
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
 }
 .logo {
-    border-radius: 50px 15px 20px 20px;
-    width: 150px;
-    height: 80px;
-    margin-left: 25px;
+  border-radius: 50px 15px 20px 20px;
+  width: 150px;
+  height: 80px;
+  margin-left: 25px;
 }
 .nav ul li {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    padding-top: 15px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
 }
 .nav ul li a {
-    padding: 0 15px;
-    font-family: 'Spartan', sans-serif;
-    margin-right: 25px;
+  padding: 0 15px;
+  font-family: "Spartan", sans-serif;
+  margin-right: 25px;
 }
 .nav ul a {
-    list-style: none;
-    text-decoration: none;
-    color: rgb(44, 134, 16);
-    font-size: 20px;
-    font-weight: bold;
+  list-style: none;
+  text-decoration: none;
+  color: rgb(44, 134, 16);
+  font-size: 20px;
+  font-weight: bold;
 }
 .nav ul a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* BANNER */
 .carousel-inner {
-    border-radius: 15px;
-    margin: 5px auto;
-    /* filter: opacity(80%); */
-    
-    overflow: auto;
-    height: 100vh;
-    position: absolute;
-    z-index: 1;
-    width: 45%;
-    text-align: center;
-    color: rgb(213, 215, 218);
-    font-weight: bold;
-    font-family: 'Spartan', sans-serif;
+  border-radius: 15px;
+  margin: 5px auto;
+  /* filter: opacity(80%); */
+
+  overflow: auto;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  width: 45%;
+  text-align: center;
+  color: rgb(213, 215, 218);
+  font-weight: bold;
+  font-family: "Spartan", sans-serif;
 }
 
 .carousel-caption {
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30%;
 }
 .carousel-caption h1 {
-    font-size: 60px;
-    font-family: 'Spartan', sans-serif;
+  font-size: 60px;
+  font-family: "Spartan", sans-serif;
 
-
-    padding: 0 8%;
-    font-size: 70px;
-    border-bottom: 2px solid rgb(213, 215, 218);
-    padding: 20px;
-    text-shadow: 4px 4px 3px rgba(126,126,126,0.6);
+  padding: 0 8%;
+  font-size: 70px;
+  border-bottom: 2px solid rgb(213, 215, 218);
+  padding: 20px;
+  text-shadow: 4px 4px 3px rgba(126, 126, 126, 0.6);
 }
 .carousel-caption q {
-    font-size: 25px;
-    font-family: 'Spartan', sans-serif;
+  font-size: 25px;
+  font-family: "Spartan", sans-serif;
 }
 
 #nosotros {
-    padding: 20px;
-    font-family: 'Spartan', sans-serif;
+  padding: 20px;
+  font-family: "Spartan", sans-serif;
 }
 #nosotros h2 {
-    padding: 1%;
-    margin-left: 4%;
+  padding: 1%;
+  margin-left: 4%;
 }
 #nosotros p {
-    margin: 1% 5%;
+  margin: 1% 5%;
 }
 
 #cartas {
-    padding: 20px;
+  padding: 20px;
 }
 #cartas h2 {
-    padding: 1%;
-    margin: 1% 4%;
-    font-family: 'Spartan', sans-serif;
+  padding: 1%;
+  margin: 1% 4%;
+  font-family: "Spartan", sans-serif;
 }
 
 /* CARDS */
 .cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 15%;
-    justify-content: center;
-    align-items: center;
-    padding-top: 1%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 15%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1%;
 }
 
 .flip-card {
-    background-color: transparent;
-    width: 350px;
-    height: 350px;
-    perspective: 1000px; /* efecto 3D */
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    justify-content: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-  }
+  background-color: transparent;
+  width: 350px;
+  height: 350px;
+  perspective: 1000px; /* efecto 3D */
+}
 
-  .flip-card-front img{
-    border-radius: 15px;
-  }
-  
-  .flip-card-back {
-    background-color: #85FFBD;
-    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
-    font-family: 'Spartan', sans-serif;
-    transform: rotateY(180deg);
-    padding-top: 45%;
-    border-radius: 15px;
-  } 
-  .flip-card-back a {
-      text-decoration: none;
-      color: rgb(44, 134, 16);
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front img {
+  border-radius: 15px;
+}
+
+.flip-card-back {
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  font-family: "Spartan", sans-serif;
+  transform: rotateY(180deg);
+  padding-top: 45%;
+  border-radius: 15px;
+}
+.flip-card-back a {
+  text-decoration: none;
+  color: rgb(44, 134, 16);
 }
 
 /* FORMULARIO */
 #formulario {
-    padding: 20px;
+  padding: 20px;
 }
 #formulario h2 {
-    padding: 1%;
-    margin-left: 4%;
-    font-family: 'Spartan', sans-serif;
+  padding: 1%;
+  margin-left: 4%;
+  font-family: "Spartan", sans-serif;
 }
 #formulario div {
-    margin: 2% 20%;
+  margin: 2% 20%;
 }
 #formulario button {
-    margin-left: 20%;
+  margin-left: 20%;
 }
 
 .form-label {
-    font-family: 'Spartan', sans-serif; 
+  font-family: "Spartan", sans-serif;
 }
 
 .btn {
-    font-family: 'Spartan', sans-serif;
+  font-family: "Spartan", sans-serif;
 }
 
 /* ICONOS */
 .redes {
-    font-size: 2em;
-    text-align: center;
-    margin-top: 2%;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 2%;
 }
 .redes i {
-    margin: 0 15px;
-    text-decoration: none;
-    color: lightslategray;
+  margin: 0 15px;
+  text-decoration: none;
+  color: lightslategray;
 }
-
 
 /* FOOTER */
 .pie {
-    margin-top: 2%;
-    padding: 3% 0;
-    color: rgb(44, 134, 16);
-    text-align: center;
+  margin-top: 2%;
+  padding: 3% 0;
+  color: rgb(44, 134, 16);
+  text-align: center;
 }
 .pie h4 {
-    font-size: 16px;
-    font-family: 'Spartan', sans-serif;
+  font-size: 16px;
+  font-family: "Spartan", sans-serif;
 }
 
 .ult {
-    background-color: #85FFBD;
-    border-radius: 20px 20px 0 0;
-    margin-top: 20px;
+  background-color: #85ffbd;
+  border-radius: 20px 20px 0 0;
+  margin-top: 20px;
 }
